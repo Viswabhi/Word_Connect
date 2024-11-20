@@ -1,0 +1,16 @@
+.config-panel {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .config-panel label {
+    margin-right: 10px;
+  }
+  
+  .config-panel input {
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+  }
+  

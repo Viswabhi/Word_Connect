@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.reset-btn {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.word-grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.word-btn {
+  padding: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.word-btn.selected {
+  background-color: yellow;
+}
+
+.word-btn.matched {
+  background-color: green;
+  color: white;
+}
