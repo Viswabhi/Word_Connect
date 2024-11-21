@@ -53,7 +53,7 @@ const WordGrid = ({ words, columns, onMatch, onAttempt, resetTrigger }) => {
           onClick={() => handleWordClick(word)}
           className={`${feedback[word] || ""} ${
             matchedWords.includes(word) ? "hidden" : ""
-          }`}
+          } ${selectedWords.includes(word) ? "selected" : ""}`}
         >
           {word}
         </button>
@@ -63,3 +63,16 @@ const WordGrid = ({ words, columns, onMatch, onAttempt, resetTrigger }) => {
 };
 
 export default WordGrid;
+
+
+
+
+
+
+
+
+
+
+
+
+

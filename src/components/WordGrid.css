@@ -30,3 +30,31 @@
     visibility: hidden;
   }
   
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.correct {
+  background-color: green;
+  color: white;
+}
+
+button.incorrect {
+  background-color: red;
+  color: white;
+}
+
+button.selected {
+  background-color: blue;
+  color: white;
+}
+
+button.hidden {
+  visibility: hidden;
+}

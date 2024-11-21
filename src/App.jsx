@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import WordGrid from "./components/WordGrid";
 import ConfigPanel from "./components/ConfigPanel";
 import { connectedWords } from "./data/connectedWords";
+import './App.css';
+
 
 const App = () => {
   const [groupSize, setGroupSize] = useState(2);
@@ -35,7 +37,7 @@ const App = () => {
 
   return (
     <div>
-      <h1>Word Connect</h1>
+      <h1 className="head">Word Connect</h1>
       <p>Attempts: {attempts}</p>
       <ConfigPanel
         groupSize={groupSize}
@@ -49,6 +51,7 @@ const App = () => {
         Reset
       </button>
       <WordGrid
+        
         words={words}
         columns={columns}
         onMatch={onMatch}
